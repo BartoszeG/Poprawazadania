@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-gap: 2px;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.count-1 {
+    color: blue;
+}
+.count-2 {
+    color: green;
+}
+.count-3 {
+    color: red;
+}
+.count-4 {
+    color: darkblue;
+}
+.count-5 {
+    color: darkred;
+}
+.count-6 {
+    color: darkgreen;
+}
+.count-7 {
+    color: black;
+}
+.count-8 {
+    color: gray;
+}
+
+.mine {
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.reset-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
